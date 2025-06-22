@@ -1,6 +1,9 @@
 # WHMCS Domain Reseller Moudle
 Global Domain Reseller for WHMCS with 1100+ tld's listed.
 
+API Request : https://nivohost.com/ ( We are ready to join you as domain reseller )
+- Create a account on nivohost then create a support ticket for api.
+
 🔧 Step 1: Extract & Upload Files
 Extract the ZIP File locally.
 
