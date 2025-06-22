@@ -4,72 +4,114 @@ Global Domain Reseller for WHMCS with 1100+ tld's listed.
 API Request : https://nivohost.com/ ( We are ready to join you as domain reseller )
 - Create a account on nivohost then create a support ticket for api.
 
-🔧 Step 1: Extract & Upload Files
-Extract the ZIP File locally.
+## 📦 Installation
 
-Inside you'll find a folder like:
-/modules/registrars/nivohostdomainreseller/
-Upload the contents to your WHMCS installation:
+### 1. Download & Extract
 
-/your-whmcs-root/modules/registrars/nivohostdomainreseller/
-🧩 Step 2: Activate the Module in WHMCS
-Go to your WHMCS Admin Panel.
+* Download and extract the ZIP file.
+* Inside the archive, you’ll find:
 
-Navigate to:
+  ```
+  /modules/registrars/nivohostdomainreseller/
+  ```
 
-Setup > Products/Services > Domain Registrars
-Locate Nivohost Domain Reseller and click Activate.
+### 2. Upload Files
 
-You’ll be asked to enter:
+* Upload the contents to your WHMCS installation directory:
 
-✅ API Key
+  ```
+  /your-whmcs-root/modules/registrars/nivohostdomainreseller/
+  ```
 
-✅ Reseller Email or ID
+---
 
-Click Save Changes.
+## ⚙️ Module Activation
 
-🌐 Step 3: Configure TLD Pricing
-Go to:
+1. Login to your WHMCS Admin Panel.
+2. Go to:
 
-Setup > Products/Services > Domain Pricing
-Click Add New TLD.
+   ```
+   Setup > Products/Services > Domain Registrars
+   ```
+3. Find **Nivohost Domain Reseller** and click **Activate**.
+4. Enter the required API details:
 
-Add TLDs like .com, .in, .xyz, etc.
+   * **API Key**
+   * **Reseller Email or ID**
+   * **Endpoint URL** (e.g., `https://api.nivohost.in/`)
+5. Click **Save Changes**.
 
-Set:
+---
 
-Auto Registration to nivohostdomainreseller
+## 🌍 Adding TLDs
 
-Pricing (optional; WHMCS can sync prices using the module if supported)
+1. Go to:
 
-Save changes.
+   ```
+   Setup > Products/Services > Domain Pricing
+   ```
+2. Click **Add New TLD**.
+3. Enter TLDs like `.com`, `.in`, `.xyz`, etc.
+4. Set **Auto Registration** to `nivohostdomainreseller`.
+5. Set pricing and save.
 
-🔁 Optional: Sync Domain Pricing (if supported)
-If the module supports pricing sync:
+---
 
-Go to:
+## 🔁 (Optional) Sync Pricing
 
-Addons > Nivohost Domain Reseller > Sync Prices
-Click Sync All TLDs to pull the latest wholesale prices.
+If the module supports syncing:
 
-🔍 Step 4: Test a Domain Search
-Go to WHMCS client area.
+* Go to:
 
-Try searching for a domain.
+  ```
+  Addons > Nivohost Domain Reseller
+  ```
+* Click **Sync Prices** to fetch live TLD pricing.
 
-Check if availability is shown and if order flow works.
+---
 
-✅ Step 5: Go Live
-Once domain registration and management (DNS, WHOIS, lock, etc.) work in test mode, you’re ready to start reselling domains via Nivohost.
+## ✅ Features
 
-Promote your domain pricing and offer via landing pages or WHMCS frontend customization.
+* ✅ Domain availability check
+* ✅ Domain registration and transfer
+* ✅ WHOIS contact management
+* ✅ DNS management (if API allows)
+* ✅ EPP code management
+* ✅ Lock/unlock domain
+* ✅ Nameserver updates
 
-📌 Troubleshooting Tips
-Issue	Solution
-Domain not registering -	Ensure correct API key and reseller credentials
-Prices not updating -	Use the sync tool (if provided) or set manually
-500 error or blank page -	Check file permissions (644 for files, 755 for folders) and PHP version compatibility
-Module not showing -	Confirm upload path is modules/registrars/nivohostdomainreseller
+---
 
-📞 Support
-For any issues or API credentials, contact <a herf="https://nivohost.com/">Nivohost</a> support directly
+## 🧪 Testing
+
+1. Go to the WHMCS client area.
+2. Search for a domain.
+3. Place a test domain order to verify everything works.
+
+---
+
+## 🛠 Troubleshooting
+
+| Problem                 | Solution                                             |
+| ----------------------- | ---------------------------------------------------- |
+| Module not appearing    | Ensure correct folder path and permissions           |
+| API error               | Verify API key and endpoint                          |
+| Domain not registering  | Check required fields and TLD setup                  |
+| Blank page or 500 error | Check PHP error logs, permissions, and compatibility |
+
+---
+
+## 📬 Support
+
+For support, please contact [Nivohost](https://nivohost.in) via your partner dashboard or email.
+
+---
+
+## 📝 License
+
+This module is intended only for **Nivohost Resellers**. Redistribution without authorization is strictly prohibited.
+
+---
+
+Would you like this exported as a `README.md` file to upload directly to GitHub?
+
