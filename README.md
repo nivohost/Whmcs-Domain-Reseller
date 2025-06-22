@@ -111,7 +111,3 @@ For support, please contact [Nivohost](https://nivohost.in) via your partner das
 
 This module is intended only for **Nivohost Resellers**. Redistribution without authorization is strictly prohibited.
 
----
-
-Would you like this exported as a `README.md` file to upload directly to GitHub?
-
